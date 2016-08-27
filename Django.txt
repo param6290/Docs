@@ -1,0 +1,44 @@
+Django is a framework for writing web applications.
+
+#Installation:-
+install pip
+install python
+
+#Use this command to download virtualenv and make pip work:-
+(first try pip install virtualenv otherwise below command)
+python3 -m pip install virtualenv
+
+
+#Set path for virtualenv to work for:-
+python3 -m virtualenv -p C:\Python34\python3.exe demo
+
+
+#Activate virtualenv in windows:-
+(first try . bin/activate this command is for linux)
+	python3 -m virtualenv demo
+
+For windows:-	
+	goto demo/Scripts/activate for setting virtualenv
+	and same goes for deactivation i.e deactivate.bat
+	
+
+#Now install django for that particular env tat you created:-
+pip install django
+or for specific version
+pip install django==1.5
+	
+#Creating a Django project in windows:-
+django-admin.py startproject projectname
+
+#Running the project:-
+cd projectname #call the django project
+python manage.py runserver [port]#run the project [to run on diff port. (optional)]
+
+
+#THE MTV:-
+Template-Cares about presentation only not storage of data.(Django "View")
+View-Cares about presenting the stored data.(Django "Controller")
+Model-Cares about data storage only not presentation,
+
+
+
